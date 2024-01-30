@@ -8,8 +8,8 @@ This code contains the steps to build an ETL pipeline that carries out the follo
 
 ## Requirements
 The minimum requirements:
-- Python 3+
- 
+- Docker
+
 
 ## Instructions on how to execute the code
 
@@ -18,20 +18,13 @@ The minimum requirements:
 git clone https://github.com/shaq31415926/Sep-Bootcamp.git
 ````
 
-2. Install the libraries that they need to run `main.py`
-````
-pip3 install -r requirements.txt
-````
+2. Copy the `.env.copy` file to `.env`and fill out the environment variabls.
 
-3. Copy the `.env.copy` file to `.env`and fill out the environment variabls.
+4. Make sure you have Docker Desktop running
 
-4. Run the `main.py` script
-Mac users:
+Create the image:
 ```
-python3 main.py
+docker image build -t etl .
 ```
-
-Window users:
-```
-python main.py
+Run the etl pipeline using docker:
 ```
