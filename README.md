@@ -9,6 +9,7 @@ This code contains the steps to build an ETL pipeline that carries out the follo
 ## Requirements
 The minimum requirements:
 - Python 3+
+ 
 
 ## Instructions on how to execute the code
 
